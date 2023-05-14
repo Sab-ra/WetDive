@@ -1,0 +1,207 @@
+* {
+  font-family: Helvetica, sans-seriv;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-one: #A4CE4E;
+  --clr-two: #0090DA;
+  --clr-three: #0061A0;
+  --clr-four: #C5D04A;
+  --clr-five: #00DADA;
+  --clr-six: #005F9D;
+  --clr-seven: #DA9000;
+  --clr-eight: #DA0090;
+  --clr-nine: #6C00DA;
+  --clr-zero: aliceblue;
+  --clr-black: #000;
+
+  --font-family_active: 'PT Sans', sans-serif;
+  --font-family_active-narrow: 'PT Sans Narrow', sans-serif;
+
+  --padding-section: 8px 16px;
+  --padding-button: 12px 24px;
+}
+
+html, 
+body {
+  height: 100%;
+  margin: 0;
+  padding: p;
+}
+
+a {
+  font-family: var( --font-family_active );
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a.button {
+  background-color: var( --clr-three ); 
+  border: none;
+  border-radius: 8px;
+  min-width: 144px;
+  color: var( --clr-zero );
+  padding: var( --padding-button );
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block;
+  font-family: var( --font-family_active );
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page-container {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section {
+  padding: var( --padding-section );
+}
+
+section.navbar {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.toggleBox a img {
+  filter: invert( 0 );
+}
+.toggleBox a img.menu.hide {
+  display: none;
+}
+.toggleBox a img.close {
+  display: none;
+} 
+.toggleBox a img.close.show {
+  display: flex;
+}
+nav.navigation {
+  display: none;
+}
+nav.navigation.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var( --clr-zero );
+}
+nav.navigation.active a {
+  padding: 16px;
+  color: var( --clr-three );
+  font-size: large;
+}
+.person a img {
+  filter: invert( 0 );
+}
+
+section.you-insured {
+  margin-top: 40px;
+}
+section.you-insured .section-header {
+  font-size: 12px;
+}
+section.you-insured .totals .life,
+section.you-insured .totals .risk {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 32px;
+}
+section.you-insured .totals .life h2,
+section.you-insured .totals .risk h2 {
+  font-size: 16px;
+  font-weight: 100;
+}
+section.you-insured .totals .life a,
+section.you-insured .totals .risk a {
+  font-family: var(--font-family_active-narrow);
+  font-size: 64px;
+}
+section.you-insured .totals .life a {
+  color: var( --clr-two );
+}
+section.you-insured .totals .risk a {
+  color: var( --clr-one );
+}
+
+section.you-protect {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+  margin-top: 24px;
+}
+section.you-protect .persons {
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+  border: 1px solid var( --clr-nine );
+  border-right: none;
+  padding: var( --padding-section );
+  font-size: 16px;
+  font-weight: 100;
+}
+section.you-protect .persons a {
+ font-family: var( --font-family_active );
+ font-size: 16px;
+ color: var( --clr-three );
+}
+
+section.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 0;
+  font-weight: 100;
+  margin-top: 48px;
+}
+section.action .insights img {
+  max-width: 64px;
+}
+
+section.action .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+section.action .buttons .pay {
+  display: flex;
+  gap: 16px;
+}
+section.action .buttons .pay .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+  
+section.action .buttons .claim a.button {
+  background: var( --clr-eight );
+}
+
+/* section#investment_preview {
+  display: flex;
+}
+section#investment_preview .graph img {
+  width: 100%;
+} */
+
+section.icons {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}

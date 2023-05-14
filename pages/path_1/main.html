@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+  <title>My WetDive</title>
+</head>
+<body>
+  <div class="page-container">
+    <section class="navbar">
+      <div class="person">
+        <a href="#">
+          <img src="../../img/icon_account.svg" alt="account symbol">
+        </a>
+      </div>      
+      <nav class="navigation">
+        <a href="#">My policies</a>
+        <a href="#">My claims</a>
+        <a href="#">Who pays</a>
+        <a href="#">Beneficials</a>
+        <a href="#">Log off</a>
+      </nav>
+      <div class="toggleBox">
+        <a onclick="showMenu()" href="#">
+          <img class="menu" src="../../img/icon_menu.svg" alt="Open menu">
+          <img class="close" src="../../img/icon_close.svg" alt="Close menu">
+        </a>
+      </div>
+    </section>
+    <section class="you-insured">
+      <div class="section-header">
+        <h1 class="title">You are insured</h1>
+        <p class="action-call">*tap on the sum to see details</p>
+      </div>
+      <div class="totals">
+        <div class="life">
+          <h2>Life</h2>
+          <a href="#"><p id="life-totals"></p></a>
+        </div>
+        <div class="risk">
+          <h2>Risk</h2>
+          <a href="#"><p id="risk-totals"></p></a>
+        </div>
+      </div>
+    </section>
+    <section class="you-protect">
+      <div class="persons">
+        <p>You are protecting</p>
+        <a href="#"><p id="protected-by-you"></p></a>
+        <p id="person-quantifier"></p>
+      </div>
+    </section>
+    <section class="action">
+      <div class="insights">
+        <a href="#">
+          <img class="insights" src="../../img/insights_bulb.png" alt="light bulb">
+        </a>
+      </div>
+      <div class="buttons">
+        <div class="pay">
+          <div class="info">
+            <div class="declare_pay">
+              <p>Next payment</p>
+            </div>
+            <div class="amount">
+              <a href="#" id="next-payment-amount"></a>
+            </div>
+          </div>
+          <a href="#" class="button">Pay</a>
+        </div>
+        <div class="claim">
+          <a href="#" class="button">Submit claim</a>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="investment_preview">
+      <div class="graph">
+        <img src="../../img/investment_graph.png" alt="investment calculator graph preview">
+      </div>
+    </section> -->
+    <section class="icons">
+      <a href="#" class="support"><img src="../../img/icon_support.svg" alt="personal_assistant"></a>
+      <a href="#" class="rewards"><img src="../../img/icon_reward.svg" alt="badges"></a>
+      <a href="#" class="history"><img src="../../img/icon_history.svg" alt="history"></a>
+      <a href="#" class="calendar"><img src="../../img/icon_calendar.svg" alt="payments calendar"></a>
+      <a href="#" class="basket"><img src="../../img/icon_basket.svg" alt="payment basket"></a>
+    </section>
+  </div>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
